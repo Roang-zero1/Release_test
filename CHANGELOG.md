@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.1.6
+
+- Workflow
+- Changelog Test
+
 ## v1.1.5
 
 Test aaaa
