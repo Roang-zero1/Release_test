@@ -2,7 +2,7 @@
 
 ## v1.1.4
 
-Testing the changelog parsing
+Testing the changelog parsinga
 
 ## v1.1.0
 
