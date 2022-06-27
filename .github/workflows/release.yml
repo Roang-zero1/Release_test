@@ -11,5 +11,7 @@ jobs:
         uses: Roang-zero1/github-create-release-action@testing
         with:
           version_regex: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
+          update_existing: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
