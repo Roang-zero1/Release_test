@@ -9,7 +9,7 @@ action "filter tag" {
 }
 
 action "Create GitHub release" {
-  uses = "Roang-zero1/github-create-release-action@master"
+  uses = "Roang-zero1/github-create-release-action@testing"
   env = {
     VERSION_REGEX = "^v[[:digit:]]+\\.[[:digit:]]+\\.[[:digit:]]+",
     UPDATE_EXISTING = "y",
