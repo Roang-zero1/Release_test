@@ -12,6 +12,7 @@ jobs:
         with:
           version_regex: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
           update_existing: true
+          release_text: ${{ github.event.commits[0].message }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
