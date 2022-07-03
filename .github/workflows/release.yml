@@ -1,22 +1,14 @@
+name: Release
+
 on:
   push:
-    tags: '*'
-name: Release
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
 jobs:
   release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: "Refresh tags"
-        id: tag
-        run: git fetch --tags --force # Retrieve annotated tags. THIS TRICK REALLY HELPS
-      - uses: ericcornelissen/git-tag-annotation-action@v2
-        id: tag-data
-      - name: Create GitHub release
-        uses: Roang-zero1/github-create-release-action@testing
-        with:
-          version_regex: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
-          update_existing: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: Roang-zero1/workflows/.github/workflows/create-release.yml@v1
+  update-major-version-tag:
+    needs: ["release"]
+    uses: Roang-zero1/workflows/.github/workflows/update-major-version-tag.yml@testing
 
