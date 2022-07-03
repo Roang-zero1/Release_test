@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.2.4
+
+Test parsing from change log
+
 ## v1.1.10
 
 Test
