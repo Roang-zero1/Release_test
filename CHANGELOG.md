@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v2.2.4
+## v2.2.5
 
 Test parsing from change log
 
