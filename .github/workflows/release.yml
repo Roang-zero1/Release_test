@@ -10,11 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
-        with:
-          repository: Roang-zero1/github-create-release-action
-          ref: testing
-          path: .github/github-create-release-action
       - name: Create GitHub release
         uses: ./.github/github-create-release-action
         with:
