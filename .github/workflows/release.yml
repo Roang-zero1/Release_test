@@ -14,9 +14,9 @@ jobs:
         with:
           repository: Roang-zero1/github-create-release-action
           ref: testing
-          path: ./github/github-create-release-action
+          path: .github/github-create-release-action
       - name: Create GitHub release
-        uses: .github/github-create-release-action
+        uses: ./.github/github-create-release-action
         with:
           version_regex: '^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+'
           update_existing: "true"
