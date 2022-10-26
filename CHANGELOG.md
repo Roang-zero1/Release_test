@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.2.6
+
+Test artifact upload
+
 ## v2.2.5
 
 Test parsing from change log
