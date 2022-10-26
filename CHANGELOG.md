@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v2.2.22
+
+Multiline changelog
+
+- first change
+- second change
+
 ## v2.2.16
 
 Blub
